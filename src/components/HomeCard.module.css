@@ -1,0 +1,32 @@
+.homeCardContainer {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 0.2fr;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.productImage {
+    width: 250px;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.pricingContainer {
+    border-top: 1px solid gray;
+}
+
+.cartLogo {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    cursor: pointer;
+}

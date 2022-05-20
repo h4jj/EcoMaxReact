@@ -1,0 +1,135 @@
+.headerContainer {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: 60px 120px;
+    grid-template-columns: 250px 1fr 250px;
+}
+
+.upperContainer {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-template-columns: 250px 1fr 1fr 1fr 250px;
+    background-color: rgb(212, 61, 61);
+}
+
+.lowerContainer {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    grid-template-columns: 250px 1fr 2fr 1fr 250px;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(105, 102, 102);
+    
+}
+
+.searchbarContainer {
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.searchbar {
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.lowerHeader {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.lowerHeader h1 {
+    color: rgba(255,255,255,0.8);
+}
+
+.ecomaxHeader {
+    align-self: center;
+    justify-self: start;
+    color: rgb(105, 102, 102);
+    grid-column: 2 / 3;
+    cursor: pointer;
+}
+
+.upperNavContainer {
+    grid-column: 4 / 5;
+    align-self: center;
+    justify-self: end;
+}
+
+.button {
+    width: 100px;
+    height: 35px;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 10px;
+    color: rgba(255,255,255,0.8);
+    background-color: rgb(105, 102, 102);
+    cursor: pointer;
+    
+}
+
+.addToCartContainer {
+    width: 130px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 1fr;
+    align-self: center;
+    justify-self: end;
+    grid-column: 4 / 5;
+    cursor: pointer;
+}
+
+.addToCartContainer p:first-child {
+    display: inline-block;
+    align-self: center;
+    justify-self: end;
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+}
+
+.addToCartContainer img {
+    width: 30px;
+    align-self: center;
+    justify-self: end;
+}
+
+.mainNav {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.addToCartCounter {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 14px;
+    align-self: center;
+    justify-self: end;
+    color:rgb(105, 102, 102);
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainNav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.mainNav ul li {
+    color: rgba(255,255,255,0.8);
+}
