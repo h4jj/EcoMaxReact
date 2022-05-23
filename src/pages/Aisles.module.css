@@ -1,0 +1,42 @@
+.aislesContainer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 800px;
+    margin: 50px 0;
+}
+
+.aislesCard {
+    width: 100%;
+    background-color: white;  
+    border-radius: 10px;
+    height: 300px; 
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid black;
+    align-self: center;
+    justify-self: center;
+    max-width: 350px;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgba(0,0,0,0.78);
+}
+
+.aislesCard:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.aislesCard h2 {
+    align-self: center;
+    justify-self: center;
+}
+
+.aislesCard img {
+    height: 150px;
+    padding-top: 20px;
+    align-self: center;
+    justify-self: center;
+}

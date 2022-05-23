@@ -1,14 +1,17 @@
 import classes from './Header.module.css';
 import addToCart from '../images/addToCart.svg'
+import { Link } from 'react-router-dom';
 
 const Header = props => {
 
     return (
         <header className={classes.headerContainer}>
             <div className={classes.upperContainer}>
-                <h2 className={classes.ecomaxHeader}>EcoMax</h2>
+                <Link to="/" className={classes.ecomaxHeader}>EcoMax</Link>
                 <div className={classes.upperNavContainer}>
-                    <button className={classes.button}>Sign In</button>
+                    <Link to="/login">
+                        <button className={classes.button}>Sign In</button>
+                    </Link>
                 </div>
             </div>
             <div className={classes.lowerContainer}>
@@ -20,17 +23,17 @@ const Header = props => {
                 </div>
                 <nav className={classes.mainNav}>
                     <ul>
-                        <li> Home </li>
-                        <li> Aisles </li>
-                        <li> About </li>
-                        <li> Support </li>
+                        <Link to="/"> Home </Link>
+                        <Link to="/aisles"> Aisles </Link>
+                        <Link to="/about"> About </Link>
+                        <Link to="/support"> Support </Link>
                     </ul>
                 </nav>
-                <div className={classes.addToCartContainer}>
+                <Link to="/checkout" className={classes.addToCartContainer}>
                     <p>My Cart</p>
                     <img src={addToCart}></img>
                     <p className={classes.addToCartCounter}>0</p>
-                </div>
+                </Link>
             </div>
         </header>
     )

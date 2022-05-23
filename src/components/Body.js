@@ -3,7 +3,7 @@ import classes from './Body.module.css';
 const Body = props => {
 
     return (
-        <div className={`${classes.body} ${props.className}`}>{props.children}</div>
+        <div className={classes.body}>{props.children}</div>
     )
 };
 

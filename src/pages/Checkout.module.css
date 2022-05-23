@@ -1,0 +1,72 @@
+.checkoutContainer {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 600px;
+    margin: 100px 0;
+    column-gap: 50px;
+}
+
+.itemsContainer {
+    grid-template-rows: 1fr 1fr 4fr;
+    padding: 30px;
+    column-gap: 50px;
+    
+}
+
+.itemsContainer div {
+    background-color: rgba(255, 255, 255,0.8);
+    border: 1px solid black;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 23px;
+}
+
+.summaryContainer {
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr 1fr;
+    padding: 60px;
+    background-color: rgba(255, 255, 255,0.8);
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.summaryContainer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid black;   
+}
+
+.summaryContainer div div {
+    grid-template-columns: 1fr;
+}
+
+.end {
+    align-items: center;
+    justify-items: end;
+}
+
+
+.summaryContainer div div p {
+    display: block;
+}
+
+.summaryContainer button {
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.8);
+    border: 0;
+    align-self: center;
+    justify-self: center;
+    color: rgba(255,255,255,0.8);
+}
+
+.summaryContainer button:hover {
+    background-color: rgb(122, 122, 122);
+}

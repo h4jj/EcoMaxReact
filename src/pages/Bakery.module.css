@@ -1,0 +1,27 @@
+.mainContainer {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    margin: 30px 0;
+    margin-bottom: 60px;
+    row-gap: 30px;
+}
+
+.mainContainer h1 {
+    padding: 0 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(184, 183, 183);
+}
+
+.bakeryContainer {
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}

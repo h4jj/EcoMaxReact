@@ -13,6 +13,7 @@
 }
 
 .lowerContainer {
+    width: 100%;
     display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 4;
@@ -27,12 +28,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .searchbar {
     width: 100%;
-    height: 38px;
+    height: 27px;
     border-radius: 10px;
     border: 1px solid gray;
     padding: 10px;
@@ -57,6 +58,8 @@
     color: rgb(105, 102, 102);
     grid-column: 2 / 3;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 .upperNavContainer {
@@ -85,6 +88,7 @@
     justify-self: end;
     grid-column: 4 / 5;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .addToCartContainer p:first-child {
@@ -128,8 +132,10 @@
     justify-content: center;
     gap: 20px;
     padding: 0 20px;
+
 }
 
-.mainNav ul li {
+.mainNav ul a {
     color: rgba(255,255,255,0.8);
+    text-decoration: none;
 }
